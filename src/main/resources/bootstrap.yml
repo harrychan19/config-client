@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: config-client
+  cache:
+    jcache:
+      config:
+  cloud:
+    config:
+      label: master
+      uri: http://localhost:9099/
+      profile: dev
+
+server:
+  port: 8808
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,refresh
